@@ -1,6 +1,7 @@
-package com.example.userservice;
+package com.example.userservice.controller;
 
-import com.example.userservice.model.User;
+import com.example.userservice.model.MyUser;
+import com.example.userservice.service.UserManagementServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,9 +16,9 @@ public class UserManagementController {
     private UserManagementServiceImpl userService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable Long id) {
-        User user = userService.getUserById(id);
-        return ResponseEntity.ok(user);
+    public ResponseEntity<MyUser> getUserById(@PathVariable Long id) {
+        MyUser myUser = userService.getUserById(id);
+        return ResponseEntity.ok(myUser);
     }
 
     // other CRUD operations

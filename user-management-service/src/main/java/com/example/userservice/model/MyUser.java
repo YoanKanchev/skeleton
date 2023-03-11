@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class User {
+public class MyUser {
     @Id
     @SequenceGenerator(
             name = "customer_id_sequence",
