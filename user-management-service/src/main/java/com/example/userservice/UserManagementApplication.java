@@ -1,12 +1,11 @@
-package com.example.authservice;
+package com.example.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AuthServiceApplication {
-
+public class UserManagementApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AuthServiceApplication.class, args);
+        SpringApplication.run(UserManagementApplication.class, args);
     }
 }
